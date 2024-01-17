@@ -28,6 +28,10 @@ app.get('/page', (req, res) => {
     res.sendFile(path.join(__dirname, './index.html'));
 })
 
+app.use((req, res) => {
+    res.sendFile(path.join(__dirname, './notfound.html'))
+})
+
 app.listen(PORT, () => {
     console.log('Server started on port', PORT);
 });
