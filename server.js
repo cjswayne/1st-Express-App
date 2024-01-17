@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-
+const path = require('path')
 const PORT = 3333;
 
 
@@ -20,6 +20,12 @@ app.get('/api/recipe', (req, res) => {
         name:'cheese',
         ingredients:['cheese', 'time']
     })
+})
+
+app.get('/page', (req, res) => {
+    // const path = 'C:\\Users\\johnn\\Desktop\\bootcamp\\practice\\express_overview\\index.html'
+    // console.log(path);
+    res.sendFile(path.join(__dirname, './index.html'));
 })
 
 app.listen(PORT, () => {
