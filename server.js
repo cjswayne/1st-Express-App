@@ -39,7 +39,7 @@ app.post('/api/users', async (req, res) => {
     const users = await getUserData();
 
 
-    if(!users.find(user => user.username === req.body.username)){
+    if(!users.find(user => user.username === req.body.username) && req.body.username){
         users.push(req.body);
 
         await saveUserData(users);
