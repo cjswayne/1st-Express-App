@@ -2,26 +2,31 @@
   {
     "username": "CJ",
     "email": "cjswayne42@gmail.com",
-    "password": "password"
+    "password": "$2b$10$rik.Zv9VaxUdRJAVUofibuMQ0ZnsxugCNM9tRiDodhrSFIsfMJtFe"
   },
   {
     "username": "Chuck",
     "email": "chuck42@gmail.com",
-    "password": "password"
+    "password": "$2b$10$sVID9GUrglbaKROXT.IEpunfvSZeZSzTdcY9mw6Bn0r/dEO0sUA1i"
   },
   {
     "username": "Chuck2",
     "email": "chuck423@gmail.com",
-    "password": "password"
+    "password": "$2b$10$w2XXf8ih5a6EDM.SCeSdc.L6d4iJoGH4guX4ZhdBOrpny/AlWVDmq"
   },
   {
     "username": "Chuck3",
     "email": "chuck423@gmail.com",
-    "password": "password"
+    "password": "$2b$10$ZgcOY00UnVwL6nZ8/ngywesg457A/8p/po4Gs7E2ZF32L5T4CuAIS"
   },
   {
     "username": "Chu3ck3",
     "email": "chuck423@gmail.com",
-    "password": "password"
+    "password": "$2b$10$J39U5EFdu0Te0FknkYknlu6Alk//MtzCBLluuLNxYROVsEQjVdccm"
+  },
+  {
+    "username": "testuser",
+    "email": "test@example.com",
+    "password": "$2b$10$CtDTVii.eC.SZKUpkon1HeSEzNN5OVIJWjWru/rQcvm/oRlLOugee"
   }
 ]
