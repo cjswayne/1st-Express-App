@@ -12,16 +12,16 @@ app.use(express.json());
 
 
 async function getUserData(){
-    const users = await fs.promises.readFile('./data.json', 'utf8');
+    const users = await fs.promises.readFile(path.join(__dirname, 'data.json'), 'utf8');
     return JSON.parse(users);
 }
 
 async function saveUserData(usersArr) {
-    await fs.promises.writeFile('./data.json', JSON.stringify(usersArr, null, 2))
+    await fs.promises.writeFile(path.join(__dirname, 'data.json'), JSON.stringify(usersArr, null, 2))
 }
 
 
-app.use(express.static('./public'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors())
 
 // app.get('/', (req, res) => {
@@ -61,8 +61,8 @@ app.post('/api/users', async (req, res) => {
     // await saveUserData(users);
     // console.log('data recieved');
 
-    res.send({
-        error:402,
+    return res.status(409).send({
+        error: 409,
         message: 'user already exists'
     })
     
